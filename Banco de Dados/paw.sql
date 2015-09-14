@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 15-Set-2015 às 00:52
+-- Generation Time: 15-Set-2015 às 01:06
 -- Versão do servidor: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -30,15 +30,16 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `id` int(11) NOT NULL,
   `nome` varchar(32) NOT NULL,
   `endereco` varchar(64) NOT NULL,
-  `telefone` varchar(16) NOT NULL
+  `telefone` varchar(16) NOT NULL,
+  `senha` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `clientes`
 --
 
-INSERT INTO `clientes` (`id`, `nome`, `endereco`, `telefone`) VALUES
-(0, 'TALLINY DALLA NORA', 'Rua Arthur Milani', '5599091321');
+INSERT INTO `clientes` (`id`, `nome`, `endereco`, `telefone`, `senha`) VALUES
+(0, 'TALLINY DALLA NORA', 'Rua Arthur Milani', '5599091321', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
