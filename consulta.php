@@ -17,6 +17,8 @@
 		echo "<li>Nome: ".$registro['nome']."</li>";
 		echo "<li>Endereco: ".$registro['endereco']."</li>";
 		echo "<li>Telefone: ".$registro['telefone']."</li>";
+                echo "<a href='formEditar.php?id=".$registro['id']."'>Editar</a> ";
+		echo "<a href='excluir.php?id=".$registro['id']."'>Excluir</a>";
 		echo "</ul>";
 	}
 ?>
